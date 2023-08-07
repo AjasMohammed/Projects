@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <header>
+      <h1>TODO App</h1>
+    </header>
+    <main>
+      <div id="backdrop"></div>
+      <section class="field">
+        <form action="">
+          <label class="field-label" for="user-field">Title</label>
+          <input type="text" id="user-field" autocomplete="off" required />
+          <label class="field-label" for="desc">Description</label>
+          <textarea id="desc" cols="30" rows="5" required></textarea>
+          <button onclick="addEvent()" type="button" class="btn">ADD</button>
+        </form>
+      </section>
+      <section id="views">
+        <!-- <div class="todo">
+          <div class="expand-btn">
+            <button class="exp-btn">
+              <img src="icons/chevron-down.svg" alt="">
+            </button>
+          </div>
+          <div class="content">
+            <h2>Title</h2>
+            <p class="desc-view" contenteditable>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nisi, voluptates modi dolorem quibusdam, temporibus earum nobis amet rerum, voluptatem perspiciatis vero dolor hic enim repellat blanditiis molestiae magnam veniam.</p>
+          </div>
+          <div class="op-btn">
+            <button class="add sm-btn">
+              <img src="icons/plus-square.svg" alt="" />
+            </button>
+            <button class="edit sm-btn">
+              <img src="icons/edit-3.svg" alt="" />
+            </button>
+            <button class="del sm-btn">
+              <img src="icons/trash-2.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="todo">
+          <div class="content">
+            <h2>Title</h2>
+            <p class="desc-view toggle-view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ab asperiores, sapiente consequatur quas debitis ducimus voluptate illum sit tempore molestiae voluptates animi facere ex optio, quod accusantium omnis saepe.</p>
+          </div>
+          <div class="op-btn">
+            <button class="add sm-btn">
+              <img src="icons/plus-square.svg" alt="" />
+            </button>
+            <button class="edit sm-btn">
+              <img src="icons/edit-3.svg" alt="" />
+            </button>
+            <button class="del sm-btn">
+              <img src="icons/trash-2.svg" alt="" />
+            </button>
+          </div>
+        </div> -->
+
+        <div class="view-field">
+          <button class="btn" id="toggle-btn">
+            <img src="icons/plus.svg" alt="" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
